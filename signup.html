@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sign up | Assignment Help</title>
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/css/account.css?v=1">
+</head>
+<body data-page="signup">
+<header class="topbar">
+  <a class="brand" href="/"><img src="/favicon.png" alt="" width="34" height="34"><span>Assignment <b>Help</b></span></a>
+  <a class="back" href="/login">Log in</a>
+</header>
+<main class="wrap">
+  <section class="card" id="signupCard">
+    <h1>Create your account</h1>
+    <p class="sub">Track your orders and manage your plan in one place.</p>
+
+    <div id="gWrap"><div id="gbtn"></div><div class="or"><span>or sign up with your details</span></div></div>
+
+    <div class="note"><span data-i="info"></span><span>We'll email your <b>User ID and password</b> to the address you enter, so please use an inbox you can open.</span></div>
+
+    <form id="signupForm" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <div class="box"><span class="ic" data-i="user"></span><input id="name" name="name" autocomplete="name" placeholder="Your full name" required></div>
+        <div class="msg" id="nameMsg"></div>
+      </div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <div class="box"><span class="ic" data-i="mail"></span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@gmail.com" required></div>
+        <div class="msg" id="emailMsg"></div>
+      </div>
+      <div class="field">
+        <label for="phone">Phone <span style="font-weight:400">(optional)</span></label>
+        <div class="box"><span class="ic" data-i="phone"></span><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 000 0000"></div>
+        <div class="msg" id="phoneMsg"></div>
+      </div>
+      <button class="btn" type="submit" id="signupBtn">Create account &amp; email my details</button>
+    </form>
+    <p class="alt">Already have an account? <a href="/login">Log in</a></p>
+  </section>
+
+  <section class="card" id="doneCard" hidden>
+    <div class="done">
+      <div class="tick" data-i="check"></div>
+      <h2>Check your inbox</h2>
+      <p id="doneMsg"></p>
+      <div class="steps">
+        <span>1. Open the email from us (check spam if it's not there).</span>
+        <span>2. Copy your <b>User ID</b> and <b>password</b>.</span>
+        <span>3. Log in, then set a password of your own.</span>
+      </div>
+      <a class="btn" href="/login" style="text-decoration:none">Go to log in</a>
+    </div>
+  </section>
+</main>
+<div id="toasts" role="status" aria-live="polite"></div>
+<script src="/js/account.js?v=1" defer></script>
+</body>
+</html>
